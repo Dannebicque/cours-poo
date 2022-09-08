@@ -1,4 +1,4 @@
-# Organisation du cours
+# Organisation du cours WR313a/WR313e
 
 Vous trouverez sur ce site tous les supports de cours pour le module de M3203 du DUT MMI de l'IUT de Troyes. Les sources nécessaires pour les différents TD et TP sont disponibles dans le dépôt GitHub associé.
 
