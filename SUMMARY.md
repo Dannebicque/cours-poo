@@ -11,8 +11,7 @@
 * [Séance D : Héritage](decouverte/seance-4.md)
 * [Séance E : Héritage & Encapsulation](decouverte/seance-5.md)
 * [Séance F : Héritage multiple et interfaces](decouverte/seance-6.md)
-* [Séance FBis : Interfaces](decouverte/seance-7.md)
-* [Séance G : Synthèse des concepts](decouverte/seance-g-synthese-des-concepts.md)
+* [Séance G : Synthèse des concepts](decouverte/seance-7.md)
 * [Séance H : Point d'étape](decouverte/seance-h-point-detape.md)
 
 ## Ancien cas pratique
