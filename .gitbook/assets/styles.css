@@ -1,0 +1,16 @@
+.plateau td{
+    border:1px solid darkgray;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+}
+
+.force {
+    font-size: 10px;
+    color:blue;
+}
+
+.ptdevie {
+    font-size: 10px;
+    color:darkgreen;
+}

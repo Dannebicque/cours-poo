@@ -1,0 +1,32 @@
+# Table of contents
+
+* [Organisation du cours](README.md)
+* [FAQ](faq.md)
+
+## Découverte
+
+* [Séance A : Introduction à la POO](decouverte/cm1.md)
+* [Séance B : Concepts de la POO](decouverte/seance-2.md)
+* [Séance C : Encapsulation](decouverte/seance-3.md)
+* [Séance D : Héritage](decouverte/seance-4.md)
+* [Séance E : Héritage & Encapsulation](decouverte/seance-5.md)
+* [Séance F : Héritage multiple](decouverte/seance-6.md)
+* [Séance FBis : Interfaces](decouverte/seance-7.md)
+* [Séance G : Synthèse des concepts](decouverte/synthese-des-concepts-exercice-facultatif.md)
+* [Séance H : Point d'étape](decouverte/cm2.md)
+
+## Ancien cas pratique
+
+* [Description générale](ancien-cas-pratique/description-generale.md)
+* [Séance A : Structure de base](ancien-cas-pratique/seance-a.md)
+* [Séance B : Génération de formulaire en POO](ancien-cas-pratique/seance-b.md)
+* [Séance C : Traitement des formulaires pour nos livres et auteurs](ancien-cas-pratique/seance-c.md)
+* [Séance D : Utilisation d'une base de données](ancien-cas-pratique/seance-d.md)
+* [Séance E : Utilisation d'une base de données et des formulaires](ancien-cas-pratique/seance-e.md)
+* [Séance F : Utilisation d'une base de données et des formulaires](ancien-cas-pratique/seance-f.md)
+* [Séance G : Finalisation](ancien-cas-pratique/seance-g.md)
+* [Séance 16 : TP Noté](ancien-cas-pratique/seance-16.md)
+
+## PHPStorm
+
+* [Installation de PHPStorm](phpstorm/installation-de-phpstorm.md)
