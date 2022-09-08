@@ -5,14 +5,14 @@
 
 ## Découverte
 
-* [Séance A : Introduction à la POO](decouverte/seance-a-introduction-a-la-poo.md)
+* [Séance A : Introduction à la POO](decouverte/seance-1.md)
 * [Séance B : Concepts de la POO](decouverte/seance-2.md)
 * [Séance C : Encapsulation](decouverte/seance-3.md)
 * [Séance D : Héritage](decouverte/seance-4.md)
 * [Séance E : Héritage & Encapsulation](decouverte/seance-5.md)
 * [Séance F : Héritage multiple et interfaces](decouverte/seance-6.md)
 * [Séance G : Synthèse des concepts](decouverte/seance-7.md)
-* [Séance H : Point d'étape](decouverte/seance-h-point-detape.md)
+* [Séance H : Point d'étape](decouverte/sance-8.md)
 
 ## Ancien cas pratique
 
