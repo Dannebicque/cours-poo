@@ -7,7 +7,7 @@
 * Construire une application PHP Orienté Objet
 
 {% hint style="info" %}
-Pour les TD et TP de POO nous allons travailler en local pour gagner en efficacité et éviter de devoir uploader le code sur un serveur pour tester. Nous allons donc installer un serveur local. Pour les utilisateurs de Windows vous pouvez utiliser _WampServer_, pour les utilisateurs d'Apple, vous pouvez utiliser _MAMP_.
+Pour les TD et TP de POO nous allons travailler en local pour gagner en efficacité et éviter de devoir uploader le code sur un serveur pour tester. Le plus simple est [d'utiliser une image docker avec un serveur LAMP configuré](../faq.md), ou une version logiciel tel que _WampServer_ ou _Xamp_ pour Windows, ou _MAMP_ pour MacOs.
 {% endhint %}
 
 ## Enoncé et travail à faire
