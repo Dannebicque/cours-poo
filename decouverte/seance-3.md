@@ -30,9 +30,9 @@ Voici le code la classe Personne.
 
     class Personne {
         // Définition des attributs de la classe
-        private $prenom;
-        private $nom;
-        private $age;
+        private string $prenom;
+        private string $nom;
+        private int $age;
 
           // Définition de la fonction constructeur 
          public function __construct($n,$p,$a) { 
@@ -42,7 +42,7 @@ Voici le code la classe Personne.
         }  
 
         // Définition du comportement sePresente() 
-        public function sePresente() {  
+        public function sePresente(): string {  
             return 'Je m\'appelle '.$this->prenom.' '.$this->nom.' et j\'ai '.$this->age.' ans '; 
         }
     }
@@ -102,9 +102,9 @@ Code de la classe Personne2
 
     class Personne2 {
         // Définition des attributs de la classe
-        private $prenom;
-        private $nom;
-        private $age;
+        private string $prenom;
+        private string $nom;
+        private int $age;
 
           // Définition de la fonction constructeur 
          public function __construct($n,$p,$a) { 
@@ -114,12 +114,12 @@ Code de la classe Personne2
         }  
 
         // Définition du comportement sePresente() 
-        public function sePresente() {  
+        public function sePresente(): string {  
             return 'Je m\'appelle '.$this->prenom.' '.$this->nom.' et j\'ai '.$this->age.' ans '; 
         }
 
         // initialisation du nom en majsucules
-        public function setNom($n){
+        public function setNom(string $n): self {
             $this->nom=strtoupper($n); 
         }
     }

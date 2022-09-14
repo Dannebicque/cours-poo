@@ -18,9 +18,9 @@ Pour les TD et TP de POO nous allons travailler en local pour gagner en efficaci
 
 Un Véhicule est un **OBJET** du monde réel. Il se caractérise par :
 
-* Sa marque
-* Sa puissance en CV
-* Son kilométrage
+* Sa marque (du texte)
+* Sa puissance en CV (un nombre entier)
+* Son kilométrage (un nombre décimal)
 
 #### **Les méthodes**
 

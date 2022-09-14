@@ -89,7 +89,7 @@ La classe Animal possède 5 propriétés :
 1. Le nom de l’animal
 2. L’âge (actuel)
 3. L’âge théorique maximum
-4. Le régime alimentaire : tableau d’aliments ([Voir séance 1](https://dannebicque.github.io/m3203/seance1/sujet.md))
+4. Le régime alimentaire : tableau d’aliments
 5. état: ‘mort’ ou ‘vivant’ (par défaut, état =’vivant’)
 
 La classe possède les méthodes suivantes :
@@ -158,9 +158,12 @@ Méthodes :
 
 #### Compléter l’application td4\_heritage
 
-*   Créer l’instance $chien1 de la classe Chien
-
-    Nom : 'Chien', Age : 2,    Age théorique maximum : 20, etat : ‘vivant’,     Nom familier : ‘Médor’
+* Créer l’instance $chien1 de la classe Chien :
+  * Nom : 'Chien',
+  * Age : 2,
+  * Age théorique maximum : 20,
+  * etat : ‘vivant’,
+  * Nom familier : ‘Médor’
 * Appeler la méthode : seNomme() ;
 * Appeler la méthode : mange(‘viande)
 * Appeler la méthode : mange(‘croquettes)

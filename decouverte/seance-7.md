@@ -9,7 +9,7 @@
 
 Codez en PHP les classes suivantes en les regroupant dans un fichier nommé **individu.php.**
 
-**Ci-dessous le fichier seance8.php**
+** Ci-dessous le fichier seance8.php **
 
 {% code title="seance8.php" %}
 ```php

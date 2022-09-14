@@ -1,5 +1,7 @@
 # Séance H : Point d'étape
 
-{% file src="../.gitbook/assets/CM2_M3203_POO_1718.pptx" %}
-Support du CM2
-{% endfile %}
+CM2
+
+{% embed url="https://presentations.davidannebicque.fr/r313-2" %}
+Support de cours
+{% endembed %}
