@@ -2,6 +2,6 @@
 
 CM1
 
-{% embed url="https://presentations.davidannebicque.fr/r313" %}
+{% embed url="https://presentations.davidannebicque.fr/r313.html" %}
 Support de cours
 {% endembed %}
