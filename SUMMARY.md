@@ -12,7 +12,7 @@
 * [Séance E : Héritage & Encapsulation](decouverte/seance-5.md)
 * [Séance F : Héritage multiple et interfaces](decouverte/seance-6.md)
 * [Séance G : Synthèse des concepts](decouverte/seance-7.md)
-* [Séance H : Point d'étape](decouverte/sance-8.md)
+* [Séance H : Point d'étape](decouverte/seance-h-point-detape.md)
 
 ## Ancien cas pratique
 

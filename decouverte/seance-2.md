@@ -7,7 +7,9 @@
 * Construire une application PHP Orienté Objet
 
 {% hint style="info" %}
-Pour les TD et TP de POO nous allons travailler en local pour gagner en efficacité et éviter de devoir uploader le code sur un serveur pour tester. Le plus simple est [d'utiliser une image docker avec un serveur LAMP configuré](../faq.md), ou une version logiciel tel que _WampServer_ ou _Xamp_ pour Windows, ou _MAMP_ pour MacOs.
+Pour les TD et TP de POO nous allons travailler en local pour gagner en efficacité et éviter de devoir uploader le code sur un serveur pour tester. Le plus simple est d'utiliser l'image docker que vous avez créé pour Symfony. Ajoutez un répertoire nommé "poo", et un alias dans le fichier de configuration. Relancez apache.
+
+Vous pouvez aussi utiliser une version logiciel tel que _WampServer_ ou _Xamp_ pour Windows, ou _MAMP_ pour MacOs, si vous rencontrez des difficultés avec Docker.
 {% endhint %}
 
 ## Enoncé et travail à faire
@@ -29,7 +31,7 @@ Utiliser un véhicule a pour effet d’augmenter la valeur du kilométrage. On s
 #### **Programmation**
 
 * Le code de la classe _Vehicule_ (avec une majuscule) doit être enregistré dans le fichier **vehicule.php** (sans majuscule)
-* Le code de l’application doit être enregistré dans le fichier **tp1\_vehicule.php**.&#x20;
+* Le code de l’application doit être enregistré dans le fichier **tp1\_vehicule.php**.
 * Utilisez la commande _require_ pour appeler la classe _Vehicule_ dans l’application.
 * Ecrire la classe pour définir les propriétés et les méthodes de l’objet _Vehicule_
 * Ecrire une application :
