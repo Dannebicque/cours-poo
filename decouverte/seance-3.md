@@ -119,7 +119,7 @@ Code de la classe Personne2
         }
 
         // initialisation du nom en majsucules
-        public function setNom(string $n): self {
+        public function setNom(string $n): void {
             $this->nom=strtoupper($n); 
         }
     }
