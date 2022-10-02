@@ -3,13 +3,13 @@
 ## OBJECTIFS :
 
 * Construire des classes mettant en œuvre les concepts d’interface, d’héritage et d’encapsulation.
-* Être capable d’écrire seul(e) du code PHP en POO&#x20;
+* Être capable d’écrire seul(e) du code PHP en POO
 
 ## TRAVAIL DEMANDE
 
 Codez en PHP les classes suivantes en les regroupant dans un fichier nommé **individu.php.**
 
-** Ci-dessous le fichier seance8.php **
+\*\* Ci-dessous le fichier seance8.php \*\*
 
 {% code title="seance8.php" %}
 ```php
@@ -143,7 +143,7 @@ Les 5 propriétés **protected** de la classe Individu sont :
 
 * `$nom` : valeur alphanumérique
 * `$prenom` : valeur alphanumérique
-* `$sexe` : valeur alphanumérique (homme ou femme)
+* `$genre` : valeur alphanumérique (homme ou femme, autre)
 * `$revenu` : revenu en euros, valeur numérique calculée valant 0 par défaut
 * `$conges` : nombre de congés, valeur numérique calculée valant 0 par défaut
 
