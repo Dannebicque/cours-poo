@@ -13,6 +13,7 @@
 * [Séance F : Héritage multiple et interfaces](decouverte/seance-6.md)
 * [Séance G : Synthèse des concepts](decouverte/seance-7.md)
 * [Séance H : Point d'étape](decouverte/seance-h-point-detape.md)
+* [Séance I](decouverte/seance-i.md)
 
 ## Ancien cas pratique
 
