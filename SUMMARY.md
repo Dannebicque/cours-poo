@@ -14,6 +14,8 @@
 * [Séance G : Synthèse des concepts](decouverte/seance-7.md)
 * [Séance H : Point d'étape](decouverte/seance-h-point-detape.md)
 * [Séance I](decouverte/seance-i.md)
+* [TD Révision](decouverte/td-revision.md)
+* [TP Noté](decouverte/seance-16.md)
 
 ## Ancien cas pratique
 
@@ -25,7 +27,6 @@
 * [Séance E : Utilisation d'une base de données et des formulaires](ancien-cas-pratique/seance-e.md)
 * [Séance F : Utilisation d'une base de données et des formulaires](ancien-cas-pratique/seance-f.md)
 * [Séance G : Finalisation](ancien-cas-pratique/seance-g.md)
-* [Séance 16 : TP Noté](ancien-cas-pratique/seance-16.md)
 
 ## PHPStorm
 

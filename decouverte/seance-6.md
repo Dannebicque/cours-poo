@@ -1,4 +1,4 @@
-# Séance F : Interfaces et Héritage multiple
+# Séance F : Héritage multiple et interfaces
 
 ## Cours
 
@@ -56,7 +56,7 @@ Soit une application instanciant la classe Personne
 
 L’exécution de cette application provoquera l’erreur suivante
 
-![Message d'erreur si l'interface n'est pas respectée](<../.gitbook/assets/erreur (1).jpg>)
+![Message d'erreur si l'interface n'est pas respectée](../.gitbook/assets/erreur.jpg)
 
 car les méthodes sePresente() et travaille() n’ont pas été définies dans la classe Personne. Le contrat n’a pas été respecté !
 
@@ -274,7 +274,7 @@ Créer la classe Voiture qui hérite de la classe VehiculeAMoteur dont les carac
 
 * Propriétés
   * Marque du véhicule
-  * Puissance en chevaux&#x20;
+  * Puissance en chevaux
 * Méthodes
   * Le constructeur
   * `Lirecaracteristiques()` qui retourne :
@@ -288,9 +288,9 @@ Créer la classe Voiture qui hérite de la classe VehiculeAMoteur dont les carac
 Créer la classe VoitureDeSport qui hérite de la classe Voiture. Il ne doit pas être possible de créer des classes filles à partir de la classe VoitureDeSport.
 
 * Propriété :
-  * Nb de secondes de zéro à  100 km/h
+  * Nb de secondes de zéro à 100 km/h
 * Méthodes :
-  * Le constructeur&#x20;
+  * Le constructeur
   * `Lirecaracteristiques()` héritée de la classe Voiture et qui affiche en plus le nombre de secondes de zéro à cent.
 
 #### Classe VoitureTourisme
@@ -318,7 +318,7 @@ Créer la classe Camion qui hérite de la classe VehiculeAMoteur dont les caract
     * Type moteur,
     * Nombre de passagers
     * Le tonnage
-    * Le nombre d’essieux&#x20;
+    * Le nombre d’essieux
 
 ### CREATION DE L’APPLICATION (seance6.php)
 
