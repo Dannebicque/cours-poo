@@ -5,6 +5,7 @@
 
 ## Découverte
 
+* [Séance A : Introduction au MVC](decouverte/seance-a-introduction-au-mvc.md)
 * [Séance A : Introduction à la POO](decouverte/seance-1.md)
 * [Séance B : Concepts de la POO](decouverte/seance-2.md)
 * [Séance C : Encapsulation](decouverte/seance-3.md)
