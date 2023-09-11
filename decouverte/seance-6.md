@@ -266,7 +266,13 @@ Créer la classe **Abstraite** VehiculeAMoteur dont les caractéristiques sont l
 * Méthodes
   * Le constructeur
   * `verificationtype($type)` : cette méthode permet de vérifier que l’utilisateur de la classe utilisera bien le bon code pour la propriété Type moteur. Il vaut soit T, soit E. (T pour Thermique, E pour Electrique)
-  * _verificationnbpassagers($nombre)_ : cette méthode permet de vérifier que l’utilisateur de la classe affecte bien une valeur numérique (un entier) au nombre de passagers.
+  * `verificationnbpassagers($nombre)` : cette méthode permet de vérifier que l’utilisateur de la classe affecte bien une valeur numérique (un entier) au nombre de passagers.
+
+
+
+{% hint style="info" %}
+Avec l'utilisation de PHP 8 et versions suivantes et l'usage du typage, la méthode `verificationnbpassagers` n'a plus forcément de sens, le passage d'une donnée autre qu'un entier provoquerait une erreur PHP
+{% endhint %}
 
 #### Classe Voiture
 
