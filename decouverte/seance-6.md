@@ -305,9 +305,9 @@ Créer la classe VoitureTourisme qui hérite de la classe Voiture dont les carac
 
 * Propriétés :
   * Consommation en litres pour 100 kilomètres.
-  * Kilométrage.
+  * Kilométrage, valeur définie par défaut à 0 km.
 * Méthodes :
-  * Le constructeur
+  * Le constructeur, toutes les propriétés ne sont pas nécessaires dans le constructeur.
   * `Lirecaracteristiques()` héritée de la classe Voiture et qui retourne en plus la consommation et le kilométrage.
   * `utiliser($distance)` : incrémente le kilométrage dun nombre de kilomètres donné en argument (`$distance`)
 
