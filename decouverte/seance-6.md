@@ -227,7 +227,7 @@ Classe abstraite, mot-clé abstract.
 
 require 'heritagemultiple.php';
 
-$objet1 = new 1('V1', 'V2'); //fatal error: Cannot instantiate abstract class A
+$objet1 = new A('V1', 'V2'); //fatal error: Cannot instantiate abstract class A
 echo $objet1->lire_proprietes(); //impossible car l'instanciation est impossible
 ```
 
