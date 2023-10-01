@@ -1,24 +1,23 @@
-# TD Révision
+# Séance I-J
 
+##
 
+## Exercice
 
-{% code title="seance9.php" %}
+{% code title="seanceIJ.php" %}
 ```php
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Fichier de test de la séance 9</title>
+    <title>Fichier de test de la séance I-J</title>
 </head>
 <body>
-<h1>Fichier de test du TP5</h1>
+<h1>Fichier de test de la séance I-J</h1>
 <?php
-require 'interfaces.php';
-require 'Humain.php';
-require 'Artiste.php';
-require 'Auteur.php';
-require 'Livre.php';
-require 'Roman.php';
+spl_autoload_register(function ($class_name) {
+    require $class_name . '.php';
+});
 ?>
 
 <h2>Création de quelques auteurs</h2>
@@ -50,13 +49,27 @@ echo $livre->afficheLivre();
 ```
 {% endcode %}
 
-#### Classe Abstraite Humain
+## Quelques explications sur l'Autoloader
+
+Vous constaterez que nous n'avons pas de "require" pour chacune des classes dans le fichier `seanceIJ.php`, pour autant vos classes seront accessibles. On utilise le mécanisme d'autoload de PHP qui permet d'éviter d'avoir des requires quand on utilise la POO. Cela s'avère très pratique quand nous avons beaucoup de classes à gérer.
+
+```php
+spl_autoload_register(function ($class_name) {
+    require $class_name . '.php';
+});
+```
+
+Le code ci-dessus assure le lien avec tous les fichiers nécessaires. En fait, à chaque fois que vous aller utiliser une classe (new Classe ou Classe::...), PHP, va essayer de trouver un fichier qui se nomme Classe.php et automatiquement en faire un require pour l'intégrer.
+
+Contrainte de cette solution, vous devez avoir un fichier par classe, et votre fichier doit se nommer exactement comme votre classe. Mais nous avons vu en cours, que cette contrainte est en fait une bonne pratique.&#x20;
+
+## Les classes
+
+### Classe Abstraite Humain
 
 Un Humain est un objet possédant un nom, un prénom et une date de naissance. Un Humain est capable de se présenter.
 
-**Implémentez cette classe en respectant l'interface donnée.**
-
-#### Classe Artiste.
+### Classe Artiste.
 
 Un `Artiste` est un `Humain` qui possède une spécialité. Une spécialité est un champ texte. Un artiste possède également une image (vous pouvez récupérer ces images directement sur Wikipedia par exemple).
 
@@ -66,7 +79,7 @@ Nous considérerons dans un premier temps deux classes héritant d'`Artiste`: Un
 
 ### Livre
 
-#### Classe Abstraire Livre
+### Classe Abstraire Livre
 
 On va définir une classe abstraite `Livre` qui contiendra les propriétés _**protected**_ suivantes :
 
@@ -74,14 +87,15 @@ On va définir une classe abstraite `Livre` qui contiendra les propriétés _**p
 * `nbPage` : entier.
 * `auteurs` : tableau d'Auteurs. Un auteur est un Artiste dont la spécialité est d'écrire.
 
-**Implémentez cette classe et les méthodes nécessaires et décrites dans l'interface**
+**Implémentez cette classe et les méthodes nécessaires**
 
-#### Classe enfant :  Roman
+### Classe enfant :  Roman et BandeDessinée
 
 On définira deux classes enfants de cette classe Livre.
 
 * Une classe `Roman` ne possède pas de spécificité.
+* Une classe `BandeDessinee` qui possède en plus des auteurs une liste de dessinateurs
 
 **Implémentez ces deux classes et les méthodes associés**
 
-**Testez et implémentez les méthodes utilisées dans le fichier seance9.php**
+**Testez et implémentez les méthodes utilisées dans le fichier seanceIJ.php**
