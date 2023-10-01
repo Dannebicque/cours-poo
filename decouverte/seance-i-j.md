@@ -43,6 +43,21 @@ echo '#################################';
 echo $livre->afficheLivre();
 
 ?>
+<h2>Création d'une BD</h2>
+<?php
+$bd = new BandeDessinee('Lucky Luke : OK Corral', 48);
+$bd->addAuteur($auteurRoman);
+$bd->addDessinateur($dessinateur)
+
+echo '#################################';
+echo $bd->afficheLivre();
+$bd->supprimerAuteur($auteurRoman);
+echo '#################################';
+echo $bd->afficheLivre();
+$auteurBd = new Auteur('', 'Morris', '01/12/1923', 'morris.jpg');
+$bd->addAuteur($auteurBd);
+echo $bd->afficheLivre();
+?>
 </body>
 </html>
 
