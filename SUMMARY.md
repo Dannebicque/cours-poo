@@ -14,6 +14,7 @@
 * [Séance G : Synthèse des concepts](decouverte/seance-7.md)
 * [Séance H : Point d'étape](decouverte/seance-h-point-detape.md)
 * [Séance I-J](decouverte/seance-i-j.md)
+* [Séance K](decouverte/seance-k.md)
 * [TP Noté](decouverte/seance-16.md)
 
 ## Ancien cas pratique
