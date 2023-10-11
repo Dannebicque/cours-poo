@@ -61,7 +61,7 @@ ALTER TABLE `Artiste` MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 ### A faire
 
-Nous allons concevoir le Manger pour la classe Artiste uniquement dans ce TP.
+Nous allons concevoir le manager pour la classe Artiste uniquement dans ce TP.
 
 Le schéma ci-dessous, illustre, sur un autre exemple, le principe que nous souhaitons mettre en place.
 
