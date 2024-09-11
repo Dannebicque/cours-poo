@@ -18,7 +18,7 @@ Vous pouvez aussi utiliser une version logiciel tel que _WampServer_ ou _Xamp_ p
 
 #### **Les propriétés**
 
-Un Véhicule est un **OBJET** du monde réel. Il se caractérise par :
+Un Véhicule est un **OBJET** du monde réel. La classe se caractérise par :
 
 * Sa marque (du texte)
 * Sa puissance en CV (un nombre entier)
@@ -26,11 +26,11 @@ Un Véhicule est un **OBJET** du monde réel. Il se caractérise par :
 
 #### **Les méthodes**
 
-Utiliser un véhicule a pour effet d’augmenter la valeur du kilométrage. On souhaite pouvoir lire les caractéristiques du véhicule
+Utiliser un véhicule a pour effet d’augmenter la valeur du kilométrage. On souhaite pouvoir afficher les caractéristiques du véhicule
 
 #### **Programmation**
 
-* Le code de la classe _Vehicule_ (avec une majuscule) doit être enregistré dans le fichier **vehicule.php** (sans majuscule)
+* Le code de la classe _Vehicule_ (avec une majuscule) doit être enregistré dans le fichier V**ehicule.php**&#x20;
 * Le code de l’application doit être enregistré dans le fichier **tp1\_vehicule.php**.
 * Utilisez la commande _require_ pour appeler la classe _Vehicule_ dans l’application.
 * Ecrire la classe pour définir les propriétés et les méthodes de l’objet _Vehicule_
