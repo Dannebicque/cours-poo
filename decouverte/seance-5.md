@@ -32,7 +32,7 @@ Les méthodes sont
 
 La classe Voiture hérite de Vehicule.
 
-* Elle possède en plus la propriété privée type qui permet de distinguer les berlines, des SUV, des 4x4 et des breaks (‘berline’,’suv’,’4x4’,’break’).&#x20;
+*   Elle possède en plus la propriété privée type qui permet de distinguer les berlines, des SUV, des 4x4 et des breaks (‘berline’,’suv’,’4x4’,’break’).
 
     Attention, seules ces valeurs sont possibles. Tout autre valeur est invalide et affichera une erreur.
 * La méthode `lire_type()` permet de connaître le type de véhicule.
@@ -44,7 +44,7 @@ La classe Voiture hérite de Vehicule.
   * Une instance de Vehicule. Exemple de votre choix
   * Deux instances de Voiture, Exemples à votre convenance.
 * Testez votre application en utilisant les différentes méthodes des différentes instances.
-* Que se passe-t-il lorsque l'on appelle la méthode lire\_caractéristique() sur une Voiture ?&#x20;
+*   Que se passe-t-il lorsque l'on appelle la méthode lire\_caractéristique() sur une Voiture ?
 
     Modifiez votre code pour que lire\_caractéristique() puisse afficher toutes les informations de la voiture.
-* Créez une nouvelle classe, Bus, qui héritera de Véhicule et qui contiendra comme propriétés le nombre de place assise et le nombre d'essieux.
+* Créez une nouvelle classe, Bus, qui héritera de Véhicule et qui contiendra comme propriétés le nombre de place assise et le nombre d'essieux (les axes portant les roues).
