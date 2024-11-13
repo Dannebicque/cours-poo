@@ -124,3 +124,129 @@ Contrainte de cette solution, vous devez avoir un fichier par classe, et votre f
 
 ## Deuxième partie
 
+Dans cette deuxième partie nous allons gérer un plateau permettant de positionner les Créatures et de déterminer lesquelles doivent s'affronter.
+
+### **Étape 1 : Classe `Coordonnee`**
+
+Créez une classe `Coordonnee` pour représenter les positions des créatures sur le plateau.
+
+* Attributs :
+  * `x` (entier) : La position horizontale (colonne).
+  * `y` (entier) : La position verticale (ligne).
+* Méthodes :
+  * `getX()` et `getY()` : Retourne la valeur de `x` ou `y`.
+  * `setX(int $x)` et `setY(int $y)` : Définit une nouvelle valeur pour `x` ou `y`.
+  * `estAdjacente(Coordonnee $autre)` : Vérifie si la position actuelle est adjacente à une autre coordonnée (cases voisines).
+  * `__toString()` : Retourne les coordonnées sous forme de chaîne, par exemple `(2, 3)`.
+
+### **Étape 2 : Classe `Plateau`**
+
+Créez une classe `Plateau` pour gérer la disposition des créatures sur une grille.
+
+* Attributs :
+  * `largeur` (entier) : Le nombre de colonnes.
+  * `hauteur` (entier) : Le nombre de lignes.
+  * `cases` (tableau bidimensionnel) : Contient les créatures positionnées sur le plateau ou `null` si la case est vide.
+* Méthodes :
+  * `__construct(int $largeur, int $hauteur)` : Initialise le plateau vide.
+  * `placerCreature(Creature $creature, Coordonnee $position)` : Place une créature à une position donnée
+  * `deplacerCreature(Creature $creature, Coordonnee $nouvellePosition)` : Déplace une créature d'une position à une autre.
+  * `estCaseLibre(Coordonnee $position)` : Retourne `true` si la case est libre, sinon `false`.
+
+### **Étape 3 : Intégration dans la Classe `Creature`**
+
+Ajoutez un attribut `position` (instance de `Coordonnee`) dans la classe `Creature`.
+
+* Méthodes :
+  * `setPosition(Coordonnee $position)` : Définit la position de la créature.
+  * `getPosition()` : Retourne la position actuelle de la créature.
+
+### **Étape 4 : Classe `Affichage` (Fourni)**
+
+Une classe `Affichage` vous est donnée pour représenter visuellement le plateau.
+
+{% code title="Affichage.php" %}
+```php
+<?php
+
+abstract class Affichage {
+    public static function afficherPlateau(Plateau $plateau): void {
+        echo "<style>
+                table { border-collapse: collapse; }
+                td { width: 50px; height: 50px; text-align: center; border: 1px solid #000; }
+              </style>";
+        echo "<table>";
+        for ($y = 0; $y < $plateau->getHauteur(); $y++) {
+            echo "<tr>";
+            for ($x = 0; $x < $plateau->getLargeur(); $x++) {
+                $creature = $plateau->getCase(new Coordonnee($x, $y));
+                echo "<td>";
+                if ($creature) {
+                    echo $creature->getNom();
+                } else {
+                    echo "&nbsp;";
+                }
+                echo "</td>";
+            }
+            echo "</tr>";
+        }
+        echo "</table>";
+    }
+}
+```
+{% endcode %}
+
+### Le fichier de test
+
+{% code title="jeu2.php" %}
+```php
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<?php
+spl_autoload_register(function ($class_name) {
+    require $class_name . '.php';
+});
+
+
+echo "<h2>=== Création des Créatures ===</h2>";
+$guerrier = new Guerrier("Thor");
+$mage = new Mage("Merlin");
+$archer = new Archer("Robin");
+
+echo $guerrier->crier() . "\n";
+echo $mage->crier() . "\n";
+echo $archer->crier() . "\n";
+
+echo "<h2>=== Placement sur le plateau ===</h2>";
+$plateau = new Plateau(5, 5);
+$plateau->placerCreature($guerrier, new Coordonnee(1, 1));
+$plateau->placerCreature($mage, new Coordonnee(3, 1));
+Affichage::afficherPlateau($plateau);
+
+echo "<h2>=== Déplacement du guérrier sur le plateau ===</h2>";
+$plateau->deplacerCreature($guerrier, new Coordonnee(2, 1));
+Affichage::afficherPlateau($plateau);
+
+echo "<h2>=== Premier Combat ===</h2>";
+$arene = new Arene();
+$arene->lancerCombat($guerrier, $mage);
+
+//echo "<h2>=== Deuxième combat ===</h2>";
+//$guerrier2 = new Guerrier("Gimli");
+//$arene2 = new Arene();
+//$arene2->lancerCombat($guerrier2, $archer);
+
+?>
+</body>
+</html>
+
+```
+{% endcode %}
