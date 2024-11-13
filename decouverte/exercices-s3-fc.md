@@ -4,7 +4,7 @@
 
 **Objectif** : Implémenter un mini-jeu où des créatures s’affrontent en utilisant les concepts de programmation orientée objet (POO) en PHP.
 
-## **Contexte**
+### **Contexte**
 
 Dans ce jeu, chaque créature a des caractéristiques (force, santé, défense) et des compétences spécifiques.
 
@@ -14,6 +14,8 @@ Votre mission est d’écrire les classes nécessaires pour permettre :
 2. L’attaque entre les créatures.
 
 Un fichier de test (jeu1.php) vous est fourni pour valider votre implémentation.
+
+## Première partie
 
 ### **Étape 1 : Classe `Creature`**
 
@@ -54,6 +56,14 @@ Créez les classes suivantes qui héritent de `Creature` :
    * Défense : 8.
    * Ajoutez une capacité d’**esquive** (30 % de chances de ne pas recevoir de dégâts).
    * Cri : "Prêt à viser !"
+
+### Etape 3 : Création de l'Arène
+
+L'Arène est une classe qui contient une méthode lancerCombat, qui va prendre deux créatures (quelque soit leur type) et déclencher un combat
+
+* lancerCombat(Creature $c1, Creature $c2)
+
+La créature c1, si elle est en vie, commence le combat, puis c2, si elle est en vie continue le combat. Le combat s'arrête lorsque l'une des deux créatures n'est plus en vie.
 
 ### Le fichier de test
 
@@ -98,7 +108,7 @@ $arene2->lancerCombat($guerrier2, $archer);
 ```
 {% endcode %}
 
-## Quelques explications sur l'Autoloader
+### Quelques explications sur l'Autoloader
 
 Vous constaterez que nous n'avons pas de "require" pour chacune des classes dans le fichier `seanceIJ.php`, pour autant vos classes seront accessibles. On utilise le mécanisme d'autoload de PHP qui permet d'éviter d'avoir des requires quand on utilise la POO. Cela s'avère très pratique quand nous avons beaucoup de classes à gérer.
 
@@ -111,3 +121,6 @@ spl_autoload_register(function ($class_name) {
 Le code ci-dessus assure le lien avec tous les fichiers nécessaires. En fait, à chaque fois que vous aller utiliser une classe (new Classe ou Classe::...), PHP, va essayer de trouver un fichier qui se nomme Classe.php et automatiquement en faire un require pour l'intégrer.
 
 Contrainte de cette solution, vous devez avoir un fichier par classe, et votre fichier doit se nommer exactement comme votre classe. Mais nous avons vu en cours, que cette contrainte est en fait une bonne pratique.&#x20;
+
+## Deuxième partie
+
