@@ -152,6 +152,7 @@ Créez une classe `Plateau` pour gérer la disposition des créatures sur une gr
   * `placerCreature(Creature $creature, Coordonnee $position)` : Place une créature à une position donnée
   * `deplacerCreature(Creature $creature, Coordonnee $nouvellePosition)` : Déplace une créature d'une position à une autre.
   * `estCaseLibre(Coordonnee $position)` : Retourne `true` si la case est libre, sinon `false`.
+  * `getCase(Coordonnee $position)` : retourne la Creature qui est sur la case correspondante.
 
 ### **Étape 3 : Intégration dans la Classe `Creature`**
 
