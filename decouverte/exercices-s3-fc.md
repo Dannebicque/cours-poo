@@ -239,6 +239,7 @@ echo "<h2>=== Premier Combat ===</h2>";
 $arene = new Arene();
 $arene->lancerCombat($guerrier, $mage);
 
+Affichage::afficherPlateau($plateau);
 //echo "<h2>=== Deuxième combat ===</h2>";
 //$guerrier2 = new Guerrier("Gimli");
 //$arene2 = new Arene();
@@ -250,3 +251,19 @@ $arene->lancerCombat($guerrier, $mage);
 
 ```
 {% endcode %}
+
+### Etape 4 : Mise à jour du plateau
+
+Modifier votre code pour que le perdant du combat disparaisse du plateau
+
+## Troisième partie
+
+Actuellement, le combat est déclenché manuelle, et les créatures sont placées par le code.
+
+On va adapter le code afin que les créatures se déplacent aléatoirement.Si deux créatures sont sur des cases adjacentes alors le combat se lance.
+
+Modifier les fichiers nécessaires et dupliquer le fichier seance8.php pour en faire un fichier seance9.php avec ces règles.
+
+Imaginez les méthodes à ajouter, a priori, dans la classe Plateau.
+
+Afficher le plateau entre chaque calcul de déplacement.
