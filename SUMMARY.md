@@ -9,6 +9,7 @@
 * [Séance B : Concepts de la POO](decouverte/seance-2.md)
 * [Séance C : Encapsulation](decouverte/seance-3.md)
 * [Séance D : Héritage](decouverte/seance-4.md)
+* [Corrections séance D](decouverte/corrections-seance-d.md)
 * [Séance E : Héritage & Encapsulation](decouverte/seance-5.md)
 * [Séance F : Héritage multiple et interfaces](decouverte/seance-6.md)
 * [Exercices S3 - FC](decouverte/exercices-s3-fc.md)
