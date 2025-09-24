@@ -20,7 +20,7 @@ abstract class A {
    static $nbinstances;
 
    //constructeur
-   public function__construct($a1, $a2)
+   public function __construct($a1, $a2)
    {
       $this->prop1 = $a1;
       $this->prop2 = $a2;
@@ -36,7 +36,7 @@ abstract class A {
       self::$nbinstances--;
    }
 
-   public function lire_proprietes()
+   public function lireProprietes(): string
    {
       return 'Propriété 1 :'.$this->prop1.', Propriété 2 :'.$this->prop2;
    }
@@ -49,7 +49,7 @@ class B extends A {
    public $prop3;
 
    //constructeur
-   public function__construct($a1, $a2, $a3)
+   public function __construct($a1, $a2, $a3)
    {
       parent::__construct($a1, $a2);
       $this->prop3 = $a3;
@@ -63,7 +63,7 @@ final class C extends B {
    public $prop4;
 
    //constructeur
-   public function__construct($a1, $a2, $a3, $a4)
+   public function __construct($a1, $a2, $a3, $a4)
    {
       parent::__construct($a1, $a2, $a3);
       $this->prop4 = $a4;
@@ -87,7 +87,7 @@ final class C extends B {
    public $prop4;
 
    //constructeur
-   public function__construct($a1, $a2, $a3, $a4)
+   public function __construct($a1, $a2, $a3, $a4)
    {
       parent::__construct($a1, $a2, $a3);
       $this->prop4 = $a4;
@@ -108,14 +108,14 @@ une classe abstraite ne peut pas être instanciée. L’héritage devient alors 
 abstract class A {
 
    //Propriétés
-   public $prop1;
-   public $prop2;
+   public mixed $prop1;
+   public mixed $prop2;
 
    // Propriété de la classe
-   static $nbinstances;
+   static int $nbinstances;
 
    //constructeur
-   public function__construct($a1, $a2)
+   public function __construct($a1, $a2)
    {
       $this->prop1 = $a1;
       $this->prop2 = $a2;
@@ -131,7 +131,7 @@ abstract class A {
          self::$nbinstances--;
    }
 
-   public function lire_proprietes()
+   public function lireProprietes(): string
    {
       return 'Propriété 1 :'.$this->prop1.', Propriété 2 :'.$this->prop2;
    }
@@ -147,7 +147,7 @@ Classe abstraite, mot-clé abstract.
 require 'heritagemultiple.php';
 
 $objet1 = new A('V1', 'V2'); //fatal error: Cannot instantiate abstract class A
-echo $objet1->lire_proprietes(); //impossible car l'instanciation est impossible
+echo $objet1->lireProprietes(); //impossible car l'instanciation est impossible
 ```
 
 Dans l'exemple ci-dessus, la classe A est abstraite. Elle ne peut pas être instanciée. Le code ci-dessous montre que l’instanciation de la classe A provoque une erreur _PHP : Fatal Error, cannot instanciate abstract class A_
@@ -168,9 +168,9 @@ Dans le code ci-dessus, il est possible de connaître le nombre d’instances (o
 
 ### Travail à faire
 
-### CREATION DE CLASSES AVEC HERITAGE (voiture.PHP)
+### CREATION DE CLASSES AVEC HERITAGE (un fichier par classe)
 
-Voici la représentation UML du diagramme des classes à créer dans cet exercice.
+Voici la représentation [UML](https://fr.wikipedia.org/wiki/UML_\(informatique\)) du diagramme des classes à créer dans cet exercice.
 
 ![Schéma d'héritage des classes (diagram UML de classe)](../.gitbook/assets/uml.png)
 
@@ -256,7 +256,12 @@ Voici le code de l’application attendue. A saisir et à tester.
     // Mise en oeuvre de l'héritage
     // IUT de Troyes - MMI
 
-    require 'vehicule.php';
+    require 'VehiculeAMoteur.php';
+    require 'Voiture.php';
+    require 'VoitureDeSport.php';
+    require 'VoitureTourisme.php';
+    require 'Camion.php';
+
     $vehicule1=new VehiculeAMoteur('E',5); // Impossible
     echo 'Véhicule 1'.'<br>';
     echo 'Instanciation impossible'.'<br>';
