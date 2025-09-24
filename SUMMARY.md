@@ -12,11 +12,11 @@
 * [Corrections séance D](decouverte/corrections-seance-d.md)
 * [Séance E : Héritage & Encapsulation](decouverte/seance-5.md)
 * [Séance F : Héritage multiple et interfaces](decouverte/seance-6.md)
-* [Exercices S3 - FC](decouverte/exercices-s3-fc.md)
+* [CM2 : Point d'étape](decouverte/seance-h-point-detape.md)
 * [Séance G : Synthèse des concepts](decouverte/seance-7.md)
-* [Séance H : Point d'étape](decouverte/seance-h-point-detape.md)
 * [Séance I-J](decouverte/seance-i-j.md)
 * [Séance K](decouverte/seance-k.md)
+* [Exercices S3 - FC](decouverte/exercices-s3-fc.md)
 * [TP Noté](decouverte/seance-16.md)
 
 ## Ancien cas pratique
