@@ -12,6 +12,7 @@
 * [Corrections séance D](decouverte/corrections-seance-d.md)
 * [Séance E : Héritage & Encapsulation](decouverte/seance-5.md)
 * [Séance F : Héritage multiple](decouverte/seance-6.md)
+* [Corrections séance F](decouverte/corrections-seance-f.md)
 * [Interfaces](decouverte/interfaces.md)
 * [CM2 : Point d'étape](decouverte/seance-h-point-detape.md)
 * [Séance G : Synthèse des concepts](decouverte/seance-7.md)
