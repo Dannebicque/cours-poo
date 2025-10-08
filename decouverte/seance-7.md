@@ -7,20 +7,17 @@
 
 ## TRAVAIL DEMANDE
 
-Codez en PHP les classes suivantes en les regroupant dans un fichier nommé **individu.php.**
+Codez en PHP les classes suivantes chaque classe sera dans un fichier dédi&#xE9;**.**
 
 \*\* Ci-dessous le fichier seance8.php \*\*
 
 {% code title="seance8.php" %}
 ```php
 <?php
-	/*---------------------------------------------------------
-	 	Application : tp1.php
-		Module M3203 - MMI 2ème année
-		IUT de Troyes
-	---------------------------------------------------------*/
 	// Classe Individu
-	require('individu.php');
+	require('Individu.php');
+	require('Etudiant.php');
+	require('Etudiant_MMI.php');
 	
 	/*  Les lignes de code de chaque instance ont été placées en
 	commentaires afin de tester progressivement votre code
@@ -95,11 +92,11 @@ Codez en PHP les classes suivantes en les regroupant dans un fichier nommé **in
 	echo '---------------fin etape 3--------------------------------<br>';
 	
 			/*==========================================
-			   Une  instance de la classe Etudiant_src
+			   Une  instance de la classe Etudiant_MMI
 			  ========================================== */
 	echo '-------------Début etape 4--------------------------------<br>';
 			// Instanciation
-	$individu4=new Etudiant_mmi('Hontoi','Franck','homme','6789012345C',18,'Web avancé');
+	$individu4=new Etudiant_MMI('Hontoi','Franck','homme','6789012345C',18,'Web avancé');
 			// Franck Hontoi se présente
 	echo $individu4->sePresente().'<br>';
 			// Franck Hontoi travaille 35 heures
@@ -181,7 +178,7 @@ Cette classe possède également un attribut propre à la classe `$nbetudiants` 
 
 Codez cette classe
 
-### Classe Etudiant\_mmi
+### Classe Etudiant\_MMI
 
 La classe Etudiant\_mmi hérite de la classe Etudiant. Il n’est pas possible d’hériter de la classe Etudiant\_mmi.
 
