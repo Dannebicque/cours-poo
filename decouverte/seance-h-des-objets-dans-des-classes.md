@@ -116,10 +116,10 @@ $party->add($war2);
 // 5) Affichage équipe
 echo '=== Partie : '.$party->getName().' ('.$party->getCount().'/'.$party->getCapacity().') ===<br>';
 foreach ($party->getMembers() as $m) {
-    echo "- '.$m->getDescription().'<br>';
+    echo '- '.$m->getDescription().'<br>';
 }
 echo 'Total niveaux: '.$party->totalLevels().'<br>';
 
-
+?>
 ```
 {% endcode %}
