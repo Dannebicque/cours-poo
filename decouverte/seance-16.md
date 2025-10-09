@@ -12,8 +12,8 @@ Vous devrez faire valider votre travail par l'enseignant et déposer vos fichier
 
 ## Consignes
 
-Vous disposez **d'une heure et quinze minutes (1h15) d'épreuve**. Vous avez le droit à vos documents sur le FTP. En aucun cas vous ne devez vous retrouver sur Internet, et sur une autre page que le fichier de _test PHP_ et la documentation officielle _php.net_.
+Vous disposez **d'une heure  (1h) d'épreuve**. Vous avez le droit à vos documents sur le FTP. En aucun cas vous ne devez vous retrouver sur Internet, et sur une autre page que le fichier de _test PHP_ et la documentation officielle _php.net_.
 
 Vous pouvez travailler en local si vous le souhaitez. Les mêmes règles s'appliquent.
 
-**Toute fraude (autre onglet internet ouvert, messagerie, portable, ...) entrainera 0 sur le module de WR313**
+**Un QCM de 15 minutes sera donné en fin de séance pour la bonne compréhension du code.**

@@ -16,10 +16,14 @@
 * [Interfaces](decouverte/interfaces.md)
 * [CM2 : Point d'étape](decouverte/seance-h-point-detape.md)
 * [Séance G : Synthèse des concepts](decouverte/seance-7.md)
-* [Séance I-J](decouverte/seance-i-j.md)
-* [Séance K](decouverte/seance-k.md)
-* [Exercices S3 - FC](decouverte/exercices-s3-fc.md)
+* [Séance H : Des objets dans des classes](decouverte/seance-h-des-objets-dans-des-classes.md)
 * [TP Noté](decouverte/seance-16.md)
+
+## Les anciennes séances
+
+* [Séance I-J](les-anciennes-seances/seance-i-j.md)
+* [Séance K](les-anciennes-seances/seance-k.md)
+* [Exercices S3 - FC](les-anciennes-seances/exercices-s3-fc.md)
 
 ## Ancien cas pratique
 
