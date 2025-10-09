@@ -29,10 +29,9 @@ Les **Warrior** peuvent porter un **Weapon** (arme).
   * `hp` : int (>= 1) — points de vie
 * **\_\_construct(string $name, int $level, int $hp)**
 * **Setters**
-  * `protected function setHp(int $hp)` : coupe à minimum 0 (pas négatif).
+  * `protected function setHp(int $hp)` : les points de vies ne peuvent pas être négatifs.
 * **Méthodes**
   * `public function isAlive(): bool`
-  * `public function takeDamage(int $amount): void` (hp diminue, min 0, amount >= 0)
   * `public function getType(): string` → `"character"` par défaut (surchargé en enfant)
   * `public function getDescription(): string`
 
