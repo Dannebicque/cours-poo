@@ -105,3 +105,27 @@ final class VoitureDeSport extends Voiture
 
 ```
 {% endcode %}
+
+{% code title="Camion" %}
+```php
+<?php
+
+class Camion extends VehiculeAMoteur
+{
+    private float $tonnage;
+    private int $nbEssieux;
+
+    public function __construct(string $typeMoteur, int $nbPassagers, float $tonnage, int $nbEssieux)
+    {
+        parent::__construct($typeMoteur, $nbPassagers);
+        $this->tonnage = $tonnage;
+        $this->nbEssieux = $nbEssieux;
+    }
+
+    public function lireCaracteristiques(): string
+    {
+        return '<p>Type moteur : '.$this->typeMoteur.', Nombre de passagers: '.$this->nbPassagers.', Tonnage : '.$this->tonnage.', Nombre d\'essieux : '.$this->nbEssieux.'</p>';
+    }
+}
+```
+{% endcode %}
