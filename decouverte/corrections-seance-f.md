@@ -129,3 +129,35 @@ class Camion extends VehiculeAMoteur
 }
 ```
 {% endcode %}
+
+{% code title="VoitureTourisme" %}
+```php
+<?php
+
+class VoitureTourisme extends Voiture
+{
+    protected float $consommation;
+    protected float $kilometrage = 0.0;
+
+    public function __construct(string $type, int $nbPlaces, string $marque, int $puissance, float $consommation)
+    {
+        parent::__construct($type, $nbPlaces, $marque, $puissance);
+        $this->consommation = $consommation;
+    }
+
+    public function afficherCaracteristiques(): string
+    {
+        $texte = parent::afficherCaracteristiques();
+        $texte .= 'Consommation : '.$this->consommation.'<br>';
+        $texte .= 'Kilométrage : '.$this->kilometrage.'<br>';
+        return $texte;
+    }
+
+    public function utiliser(float $distance): void
+    {
+        $this->kilometrage += $distance;
+    }
+}
+
+```
+{% endcode %}
