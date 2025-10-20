@@ -67,6 +67,10 @@ Les **Warrior** peuvent porter un **Weapon** (arme).
 * **\_\_construct(string $name, int $damage)**
 * **getDescription(): string** `→ ex.` "Sword+3"\`
 
+{% hint style="info" %}
+Une classe qui est composée de classe est une composition. Warrior fait donc de la composition avec la classe Weapon
+{% endhint %}
+
 ### Classe `Party`
 
 * **Propriétés (privées)**
