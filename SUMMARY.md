@@ -17,6 +17,7 @@
 * [CM2 : Point d'étape](decouverte/seance-h-point-detape.md)
 * [Séance G : Synthèse des concepts](decouverte/seance-7.md)
 * [Séance H : Des objets dans des classes](decouverte/seance-h-des-objets-dans-des-classes.md)
+* [Séance I : Manager et BDD](decouverte/seance-i-manager-et-bdd.md)
 * [TP Noté](decouverte/seance-16.md)
 
 ## Les anciennes séances
